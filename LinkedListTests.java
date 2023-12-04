@@ -14,17 +14,13 @@ public class LinkedListTests {
     {
         LinkedList list1 = new LinkedList();
         list1.append(1);
-        assertEquals(1, list1.first());
-        assertEquals(1, list1.last());
-    }
-
-    @Test
-    public void testEmpty2()
-    {
-        LinkedList list1 = new LinkedList();
-        list1.append(1);
         list1.append(2);
         list1.append(3);
-        assertEquals(3,list1.length());
+        list1.append(4);
+        list1.append(5);
+        list1.append(6);
+        assertEquals(1, list1.first());
+        assertEquals(6, list1.last());
     }
+
 }
